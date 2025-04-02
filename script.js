@@ -1,3 +1,5 @@
+let message = "welocme to my website";
+alert(message);
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
 }
