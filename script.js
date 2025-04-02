@@ -64,4 +64,4 @@ function bookTicket(event) {
         bookingResult.style.color = "red";
     }
 }
-alart("this website only for colloge project")
+alert("this website only for colloge project")
