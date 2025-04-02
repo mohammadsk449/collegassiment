@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <div id="clock"></div>
+            <div class="logo">
+                <img src="indianlogo.png" alt="Railway Logo">
+            </div>
+            <h1>Indian Railway</h1>
+            <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search Train</a></li>
+                <li><a href="#booking">Book Ticket</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <aside id="sidebar">
+            <h2>Train Details</h2>
+        </aside>
+        
+        <section id="home">
+            <h2>Welcome to Indian Railway</h2>
+            <p>Find and book train tickets easily.</p>
+        </section>
+        <section id="search">
+            <h2>Search Train</h2>
+            <input type="text" id="trainSearch" placeholder="Enter Train Name/Number">
+            <button onclick="searchTrain()">Search</button>
+            <p id="trainResult"></p>
+        </section>
+        <section id="booking">
+            <h2>Book Your Ticket</h2>
+            <form onsubmit="return bookTicket(event)">
+                <input type="text" id="userName" placeholder="Enter Your Name" required>
+                <input type="text" id="fromStation" placeholder="From Station" required>
+                <input type="text" id="toStation" placeholder="To Station" required>
+                <button type="submit">Book Now</button>
+            </form>
+            <p id="bookingResult"></p>
+        </section>
+        <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@indianrailway.com</p>
+            <p>Phone: 1800-000-000</p>
+        </section>
+    </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>
+<script src="script.js"></script>    
+</body>
+</html>
